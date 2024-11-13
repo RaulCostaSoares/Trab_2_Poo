@@ -2,8 +2,8 @@
 
 using namespace std;
 
-Obras::Obras(const string& titulo, const string& autor, const string& genero, int anoPublicacao, int vendas)
-    : titulo(titulo), autor(autor), genero(genero), anoPublicacao(anoPublicacao), vendas(vendas) {}
+Obras::Obras(const string& titulo, const string& autor, const string& genero, const string& midia, int anoPublicacao)
+    : titulo(titulo), autor(autor), genero(genero), anoPublicacao(anoPublicacao), midia(midia) {}
 
 string Obras::getTitulo() const {
     return titulo;
@@ -17,10 +17,10 @@ string Obras::getGenero() const {
     return genero;
 }
 
-int Obras::getAnoPublicacao() const {
-    return anoPublicacao;
+string Obras::getMidia() const {
+    return midia;
 }
 
-int Obras::getVendas() const {
-    return vendas;
+int Obras::getAnoPublicacao() const {
+    return anoPublicacao;
 }
